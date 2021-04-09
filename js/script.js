@@ -10,10 +10,13 @@ const personalMovieDB = {
     privat: false
 };
 
-/* const a = prompt("What is your last movie you´ve seen?", "");
+/* 
+const a = prompt("What is your last movie you´ve seen?", "");
 const b = prompt("What´s the score?", "");
 const c = prompt("What is your last movie you´ve seen?", "");
-const d = prompt("What´s the score?", ""); */
+const d = prompt("What´s the score?", ""); 
+*/
+
 
 for (let i = 0; i < 2; i++) {
     const a = prompt("What is your last movie you´ve seen?", "");
@@ -24,7 +27,43 @@ for (let i = 0; i < 2; i++) {
     } else {
         i--;
     }
+} 
+
+
+/* 
+let i = 0;
+while (i < 2) {
+    const a = prompt("What is your last movie you´ve seen?", "");
+    const b = prompt("What´s the score?", "");
+    
+    if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+    } else {
+        i--;
+    }
+    i++;
+} 
+*/
+
+
+/* 
+let i = 0;
+
+do {
+    const a = prompt("What is your last movie you´ve seen?", "");
+    const b = prompt("What´s the score?", "");
+    
+    if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+    } else {
+        i--;
+    }
+    i = i + 1;
 }
+
+while (i < 2);
+*/
+
 console.log(personalMovieDB);
 
 if (personalMovieDB.count < 10) {
