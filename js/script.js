@@ -15,7 +15,11 @@ const b = prompt("What´s the score?", "");
 const c = prompt("What is your last movie you´ve seen?", "");
 const d = prompt("What´s the score?", "");
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-
+for (let i = 0; i < 2; i++) {
+    const a = prompt("What is your last movie you´ve seen?", "");
+    const b = prompt("What´s the score?", "");
+    personalMovieDB.movies[a] = b;
+}
 console.log(personalMovieDB);
+
+
